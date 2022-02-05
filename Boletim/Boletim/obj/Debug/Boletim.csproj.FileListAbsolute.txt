@@ -1,0 +1,10 @@
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\bin\Debug\Boletim.exe.config
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\bin\Debug\Boletim.exe
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\bin\Debug\Boletim.pdb
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.csprojAssemblyReference.cache
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.TelaNota.resources
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.Properties.Resources.resources
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.csproj.GenerateResource.cache
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.csproj.CoreCompileInputs.cache
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.exe
+C:\Users\Jaque\OneDrive - Etec Centro Paula Souza\Escola_2°Ano_2021\TEC_DS\Boletim\Boletim\obj\Debug\Boletim.pdb
