@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+     
+<head>
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <script src="js/funcoes.js"></script>
+  
+  <style>
+    body
+        {
+        background-image: url(imagens/wallpaper_vaporwave.jpg);
+        background-size: 100%;
+        }  
+ 
+.container{
+  margin: auto;
+  width: 35%;
+  padding: 10px;
+  border: 1px solid black;
+ 
+  background-color: black;
+  height: 500px;
+}
+.header{
+  background-color: mediumorchid;
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+.visor{
+  font-size: 24px;
+  padding: 24px 5px;
+  font-weight: 700;
+  text-align: right;
+  color: aliceblue;
+  width: 97.0%;
+  border: none;
+  background-color: black;
+  margin-left: 5px;
+}
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.conflict
+{
+  display:inline-block;
+  width:100%;
+}
+.global{
+ padding: 15px;
+ font-weight: bold;
+ font-size: 16px;
+ border: none;
+ border-radius: 3px;
+ background-color: mediumturquoise;
+ float: left;
+ width: 23.9%;
+ margin: 0 2px;
+ 
+}
+.conflict .left,
+.conflict .right{
+  float: left;
+  position: relative;
+}
+.left{
+  width: 74%;
+}
+.right{
+  width: 24%;
+}
+.big{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  float: left;
+  width: 64.5%;
+  margin: 0 2px;
+}
+.small{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  float: left;
+  width: 31.5%;
+  margin: 0 2px;
+}
+.plus{
+  height: 112px;
+  width: 100%;
+}
+
+.purple{
+  background-color: purple;
+}
+.white{
+  background-color: white;
+}
+.white-text{
+  color: white;
+}
+.top-margin{
+  margin-top: 4px;
+}  
+      
+  </style>      
+</head>
+    
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-purple navbar-light fixed-top"  style="background-color: purple">
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" style="color: darkturquoise; font-family: monospace; font-size: 17px" ><b>[B1T_B0M]</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:white">Novidades e Lançamentos</a>
+    </li>
+    
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
+        Todos os departamentos
+      </a>
+      <div class="dropdown-menu" style="background-color: dimgray">
+        <a class="dropdown-item" href="#" style="color:black">Componentes</a>
+        <a class="dropdown-item" href="#" style="color:black">Headphones</a>
+        <a class="dropdown-item" href="#" style="color:black">Monitores</a>
+        <a class="dropdown-item" href="#" style="color:black">Acessórios</a>
+        <a class="dropdown-item" href="#" style="color:black">Computadores</a>
+        <a class="dropdown-item" href="#" style="color:black">Notebooks</a>
+        <a class="dropdown-item" href="#" style="color:black">Caixas de som</a>
+        <a class="dropdown-item" href="#" style="color:black">Periféricos</a>
+        <a class="dropdown-item" href="#" style="color:black">Para gamers</a>
+        <a class="dropdown-item" href="#" style="color:black">Câmeras</a>
+        <a class="dropdown-item" href="#" style="color:black">Impressoras</a>
+        <a class="dropdown-item" href="#" style="color:black">Roteadores</a>
+        <a class="dropdown-item" href="#" style="color:black">Mais...</a>
+      </div>
+    </li>
+
+     <!-- Dropdown -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">Filtrar por marca
+        </a>
+        <div class="dropdown-menu" style="background-color: dimgray">
+        <a class="dropdown-item" href="#" style="color:black">Samsung</a>
+        <a class="dropdown-item" href="#" style="color:black">Apple</a>
+        <a class="dropdown-item" href="#" style="color:black">Sony</a>
+        <a class="dropdown-item" href="#" style="color:black">Canon</a>
+        <a class="dropdown-item" href="#" style="color:black">Xiaomi</a>
+        <a class="dropdown-item" href="#" style="color:black">Positivo</a>
+        <a class="dropdown-item" href="#" style="color:black">Asus</a>
+        <a class="dropdown-item" href="#" style="color:black">LG</a>
+        <a class="dropdown-item" href="#" style="color:black">JBL</a>
+        <a class="dropdown-item" href="#" style="color:black">Nikon</a>
+        <a class="dropdown-item" href="#" style="color:black">Razer</a>
+        <a class="dropdown-item" href="#" style="color:black">HP</a>
+        <a class="dropdown-item" href="#" style="color:black">Mais...</a>
+       </div>
+    </li>  
+      
+      <!-- Links -->
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:white">Ofertas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.google.com/maps/place/Escola+T%C3%A9cnica+Estadual+Professor+Carmine+Biagio+Tundisi/@-23.1190325,-46.5835531,17z/data=!3m1!4b1!4m5!3m4!1s0x94cec14f0eccaa37:0xd37936c0be2f00a6!8m2!3d-23.1190325!4d-46.5813644" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="color:white">Loja Física</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cadastro.html" style="color:white">Sua Conta</a>
+    </li> 
+  </ul>
+      
+    <nav class="navbar navbar-expand-sm bg-purple navbar-dark" style="background-color: purple; margin-left: auto">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-1" type="text" placeholder="Aqui tem tuudo...">
+    <button class="btn btn-success" type="submit" style="background-color: darkturquoise; border-bottom-color: darkturquoise; color: black">Procurar</button>
+  </form>
+</nav>
+</nav>
+
+ <br><br><br>
+ <br><br><br>
+    
+    <center>
+    <div class="container">
+      <div class="header" style="font-family: monospace">Calculadora [B1T_B0M]</div>
+      <input type="text" class="visor" id="visor">
+      <div class="first-row">
+        <input type="button" name="" id="btnraiz" value="&radic;" class="global">
+        <input type="button" name="" id="btn(" value="(" class="global">
+        <input type="button" name="" id="btn)" value=")" class="global">
+        <input type="button" name="" id="btn%" value="%" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" id="btn7" value="7" class="global" onclick="escrever(7);">
+        <input type="button" name="" id="btn8" value="8" class="global" onclick="escrever(8);">
+        <input type="button" name="" id="btn9" value="9" class="global" onclick="escrever(9);">
+        <input type="button" name="" id="btn/" value="/" class="global" onclick="operacao(4);">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" id="btn4" value="4" class="global" onclick="escrever(4);">
+        <input type="button" name="" id="btn5" value="5" class="global" onclick="escrever(5);">
+        <input type="button" name="" id="btn6" value="6" class="global" onclick="escrever(6);">
+        <input type="button" name="" id="btnX" value="X" class="global" onclick="operacao(3);">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" id="btn1" value="1" class="global" onclick="escrever(1);">
+        <input type="button" name="" id="btn2" value="2" class="global" onclick="escrever(2);">
+        <input type="button" name="" id="btn3" value="3" class="global" onclick="escrever(3);">
+        <input type="button" name="" id="btn-" value="-" class="global" onclick="operacao(2);">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" id="btn0" value="0" class=" big" onclick="escrever(this.value);">
+          <input type="button" name="" id="btn." value="." class=" small">
+          <input type="button" name="" id="limpa" value="Del" class=" purple small white-text top-margin" onclick="limpa()">
+          <input type="button" name="" id="btn=" value="=" class=" purple white-text big top-margin" onclick="calcula();">
+        </div>
+        <div class="right">
+          <input type="button" name="" id="btn+" value="+" class="global white plus" onclick="operacao(1);">
+        </div>
+      </div>
+    </div>
+    </center>
+    
+    <br><br><br>
+    <br><br><br>
+    
+
+    
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-purple w3-xlarge" style="background-color: purple">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+    <p style="font-family:sans-serif; font-size: 15px; color: black" >Av. Pref. Antônio Júlio Toledo Garcia Lopes, 200</p>
+    <p style="font-family:sans-serif; font-size: 15px; color: black">Jardim das Cerejeiras, Atibaia - SP</p>
+    <p style="font-family:sans-serif; font-size: 15px; color: black"><a href="https://www.google.com/maps/place/Escola+T%C3%A9cnica+Estadual+Professor+Carmine+Biagio+Tundisi/@-23.1190276,-46.5835531,17z/data=!3m1!4b1!4m5!3m4!1s0x94cec14f0eccaa37:0xd37936c0be2f00a6!8m2!3d-23.1190325!4d-46.5813644.html
+      ">CEP: 12951-231</a></p>
+    <p style="font-family:sans-serif; font-size: 15px; color: black" >+55(11)4412-1470</p>
+    <p style="font-family:sans-serif; font-size: 15px; color: black" >Whatsapp: +55(11) 9 4402-8922</p>
+</footer>
+  
+</body>
+</html>
