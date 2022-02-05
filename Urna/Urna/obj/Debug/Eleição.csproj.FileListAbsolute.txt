@@ -1,0 +1,7 @@
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Eleição.csprojAssemblyReference.cache
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Eleição.UrnaEletrônica.resources
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Urna.Properties.Resources.resources
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Eleição.csproj.GenerateResource.cache
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Eleição.csproj.CoreCompileInputs.cache
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Urna.exe
+C:\Users\Jaque\source\repos\Urna\Urna\obj\Debug\Urna.pdb
